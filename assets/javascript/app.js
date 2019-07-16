@@ -24,3 +24,18 @@ $("#startGame").on("click", function() {
 function startTimer() {
     intervalId = setInterval(decrement, 1000);
 }
+
+function decrement() {
+    timer--;
+    $("#countdown").html("<span>" + timer + "<span>");
+
+    if (timer === 0) {
+        stopTimer();
+    }
+}
+
+function stopTimer() {
+    clearInterval(intervalId);
+    nextQuestion();
+
+}
