@@ -12,3 +12,15 @@ var questionArray = [{
     correctAnswer: 'Clown',
 }
 }];
+
+$("#startGame").on("click", function() {
+    $("#startGame").replaceWith();
+    startTimer();
+    decrement();
+    firstQuestion();
+    //renderButtons();
+})
+
+function startTimer() {
+    intervalId = setInterval(decrement, 1000);
+}
