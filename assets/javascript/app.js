@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#remaining-time").hide();
     $("#start").on('click', trivia.startGame);
     $(document).on('click', '.option', trivia.guessChecker);
-    $("#audio").hide();
+    // $("#audio").hide();
 
 })
 
@@ -23,7 +23,8 @@ var trivia = {
         q3: 'In South Dakota its illegal to fall down and sleep where?',
         q4: 'The first puck used In the game of ice hockey game, what was the first puck used made out of?',
         q5: 'What ailment kills the most fruit flies?',
-        q6: 'In California you cant legally buy a mousetrap without having a what?'
+        q6: 'In California you cant legally buy a mousetrap without having a what?',
+        q7: 'It is illegal in Texas to put what on your neighbors Cow?',
     },
     options: {
         q1: ['Marriage', 'Cockroach', 'Burrito', 'Clowns'],
@@ -32,6 +33,7 @@ var trivia = {
         q4: ['Frozen cow manure', 'Dried Mud', 'Sliced Apple Pie', 'Rotten False Teeth'],
         q5: ['Smoke', 'Constipation', 'Off lotion', 'Insecticide'],
         q6: ['CDC Certification', 'Money', 'Hunting License', 'Degree'],
+        q7: ['Graffiti', 'Bell', 'Blanket', 'Hat'],
 
     },
     answers: {
@@ -41,7 +43,7 @@ var trivia = {
         q4: 'Frozen cow manure',
         q5: 'Constipation',
         q6: 'Hunting License',
-
+        q7: 'Graffiti',
     },
 
     startGame: function() {

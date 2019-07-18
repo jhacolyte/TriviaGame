@@ -5,6 +5,7 @@ body {
     background-position: center;
     background-position-y: 0%;
     text-align: center;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
 .text-muted {
@@ -17,4 +18,9 @@ body {
 
 .option {
     margin: 15px;
+}
+
+.btn {
+    background: greenyellow;
+    color: black;
 }
