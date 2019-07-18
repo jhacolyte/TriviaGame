@@ -19,16 +19,23 @@ var trivia = {
     questions: {
         q1: 'What is Johnny Depp afraid of?',
         q2: 'Washington police officers get a half hour class in how to what?',
-
+        q3: 'In South Dakota its illegal to fall down and sleep where?',
+        q4: 'The first puck used In the game of ice hockey game, what was the first puck used made out of?',
+        q5: ''
     },
     options: {
         q1: ['Marriage', 'Cockroach', 'Burrito', 'Clowns'],
         q2: ['Talking', 'Laughing', 'Potty Breaks', 'Sit Down'],
+        q3: ['Bathroom', 'Office', 'In a cheese Factory', 'Bed'],
+        q4: ['Frozen cow manure', 'Dried Mud', 'Sliced Apple Pie', 'Rotten False Teeth'],
+
 
     },
     answers: {
         q1: 'Clowns',
         q2: 'Sit Down',
+        q3: 'In a cheese Factory',
+        q4: 'Frozen cow manure',
     },
 
     startGame: function() {
