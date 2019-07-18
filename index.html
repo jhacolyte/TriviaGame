@@ -2,70 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coolest Trivia Game Ever!!!</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/gif" href="assets/images/IMG_3456.jpg" />
+
+
+
 </head>
 
 <body>
-    <div class="jumbotron" id="twd-jumbo">
-        <h1 id="heading">Trivia Game</h1>
-    </div>
 
-    <div class="row">
-        <div class="col-md-1">
+
+
+    <div class="container">
+        <div class="header text-center clearfix">
+            <h1 class="text-muted">Coolest Trivia Game Ever!!!</h1>
         </div>
-        <div class="col-md-10">
-            <div class="row">
-                <div class="col-md-4">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div id="game">
+                    <h2>Coolest Trivia Game Ever!!!</h2>
+                    <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+                    <p id="question" class="lead"></p>
                 </div>
-
-                <div class="col-md-4 text-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="well">
-                                <h4 id="time-left">
-                                    Time remaining: 8 seconds
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="content">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
+                <div id="results">
                 </div>
             </div>
-            <br>
+
             <div class="row">
-                <div class="col-md-12">
-                    <div id="quiz">
-                        <form>
-                            <div class="form-group">
-                                <div class="radio">
-                                    <h6 class="questionX"></h6>
-                                    <div id="responses">
-                                    </div>
-                                </div>
-                            </div>
-                            <br><br>
-                            <div id="submit-div"></div>
-                        </form>
+                <div id="choices" class="text-center">
+                    <button id="start" class="btn btn-info btn-lg">Start Game</button>
+                    <div id="options">
+
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <div class="col-md-1">
-        </div>
-    </div>
+
+        <!-- jQuery CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- TRIVIA APP JS -->
+        <script src="assets/javascript/app.js"></script>
 
 
 </body>
